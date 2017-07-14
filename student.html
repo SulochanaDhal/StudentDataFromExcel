@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Vignan's Institute of Engineering for Women</title>
+</head>
+<body bgcolor="#00ffff">
+    <form action="democopy2.php" method="post">
+<center>
+    <h1>Student Details</h1>
+    <pre><br><br><br><font color="#dc143c"><div style="font-size:170%">
+Search By:<select id="mySelect" onchange="myFunction()" name="dropdown" >
+	<option value="">	  
+<option value="Number">Number  
+	<option value="Name">Name
+  	<option value="Father's Name">Father's Name
+	<option value="Father's Number 1">Father's Number 1
+	<option value="Father's Number 2">Father's Number 2
+	<option value="Personal Number">Personal Number 
+	<option value="Email-Id">Email-Id
+</select>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("demo").innerHTML = x +' <input type="text" name="require" size="30">';
+}</script><input type="Submit">        <input type="Reset">
+</pre>
+</center>
+</body>
+</html>
+
